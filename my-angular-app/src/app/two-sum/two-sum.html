@@ -1,0 +1,42 @@
+<div class="page-container">
+  <div class="algorithm-card">
+    <h1 class="page-title">Two Sum</h1>
+
+    <p class="text-center text-secondary mb-4">
+      Discover the pair that makes your target sparkle.
+    </p>
+
+    <div class="mb-3 text-center">
+      <label class="form-label d-block">Number Set</label>
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Try: 2, 7, 11, 15"
+        [(ngModel)]="nums"
+      >
+    </div>
+
+    <div class="mb-3 text-center">
+      <label class="form-label d-block">Desired Sum</label>
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Try: 9"
+        [(ngModel)]="target"
+      >
+    </div>
+
+    <button
+      class="btn btn-primary run-button"
+      type="button"
+      (click)="runTwoSum(nums, target)"
+    >
+      Run Algorithm
+    </button>
+
+    <div *ngIf="result" class="result-container mt-4">
+      <h5>Result</h5>
+      <p class="mb-0">{{ result }}</p>
+    </div>
+  </div>
+</div>

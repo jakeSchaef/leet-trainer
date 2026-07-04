@@ -1,0 +1,19 @@
+<div>
+  <strong>Input Values</strong>
+  <pre>
+{% for n in nums %}
+{{ loop.index0 }}: {{ n }}
+{% endfor %}
+  </pre>
+  <div class="meta">(This demo uses server-side sample input.)</div>
+</div>
+<div class="result">
+  Indexes that are equivalent to targ:
+  <ul>
+    {% for i in result_indexes %}
+      <li>{{ i }}</li>
+    {% else %}
+      <li>No matches</li>
+    {% endfor %}
+  </ul>
+</div>

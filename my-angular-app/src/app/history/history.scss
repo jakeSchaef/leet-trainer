@@ -1,0 +1,64 @@
+.title-glow {
+  color: var(--text);
+  text-shadow: 0 0 10px var(--purple-glow);
+}
+
+.history-card {
+  background: var(--panel);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  border-radius: 14px;
+  color: var(--text);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+  transition: 0.2s ease-in-out;
+}
+
+.history-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 18px var(--purple-glow);
+  border-color: var(--purple);
+}
+
+.algo-title {
+  color: var(--purple);
+  font-weight: 600;
+}
+
+.timestamp {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.divider {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.section-label {
+  color: #ccc;
+  font-size: 0.85rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.json-block {
+  background: var(--panel-2);
+  padding: 10px;
+  border-radius: 10px;
+  color: #ddd;
+  font-size: 0.85rem;
+  overflow-x: auto;
+}
+
+.result-box {
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--bronze);
+  font-weight: bold;
+}
+
+.loading-text,
+.empty-state {
+  color: #aaa;
+  margin-top: 40px;
+}

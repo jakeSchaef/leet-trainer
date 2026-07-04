@@ -1,0 +1,32 @@
+<div class="page-container">
+  <div class="algorithm-card">
+    <h1 class="page-title">Sliding Window</h1>
+
+    <p class="text-center text-secondary mb-4">
+      Find the length of the longest substring with all unique characters.
+    </p>
+
+    <div class="mb-3">
+      <label class="form-label">String</label>
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Example: abcabcbb"
+        [(ngModel)]="input"
+      >
+    </div>
+
+    <button
+      class="btn btn-primary run-button"
+      type="button"
+      (click)="runSlidingWindow(input)"
+    >
+      Run Algorithm
+    </button>
+
+    <div *ngIf="result" class="result-container mt-4">
+      <h5>Result</h5>
+      <p class="mb-0">{{ result }}</p>
+    </div>
+  </div>
+</div>

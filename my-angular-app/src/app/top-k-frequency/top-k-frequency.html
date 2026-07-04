@@ -1,0 +1,42 @@
+<div class="page-container">
+  <div class="algorithm-card">
+    <h1 class="page-title">Top K Frequency</h1>
+
+    <p class="text-center text-secondary mb-4">
+      Find the k most frequent elements.
+    </p>
+
+    <div class="mb-3 text-center">
+      <label class="form-label d-block">Numbers</label>
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Example: 1,1,1,2,2,3"
+        [(ngModel)]="nums"
+      >
+    </div>
+
+    <div class="mb-3 text-center">
+      <label class="form-label d-block">K</label>
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Example: 2"
+        [(ngModel)]="k"
+      >
+    </div>
+
+    <button
+      class="btn btn-primary run-button"
+      type="button"
+      (click)="runTopKFrequency(nums, k)"
+    >
+      Run Algorithm
+    </button>
+
+    <div *ngIf="result" class="result-container mt-4">
+      <h5>Result</h5>
+      <p class="mb-0">{{ result }}</p>
+    </div>
+  </div>
+</div>

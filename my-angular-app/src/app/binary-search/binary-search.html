@@ -1,0 +1,59 @@
+<div class="page-container">
+
+    <div class="algorithm-card">
+
+        <h1 class="page-title">Binary Search</h1>
+
+        <p class="text-center text-secondary mb-4">
+            Search a sorted array for a specific element.
+        </p>
+
+        <!-- Sorted Array -->
+        <div class="mb-3 text-center">
+            <label class="form-label d-block">Sorted Array</label>
+
+            <input
+                class="form-control"
+                type="text"
+                placeholder="Example: 1,2,3,4,5"
+                [(ngModel)]="numbers"
+            >
+        </div>
+
+        <!-- Target -->
+        <div class="mb-3 text-center">
+            <label class="form-label d-block">Target Element</label>
+
+            <input
+                class="form-control"
+                type="text"
+                placeholder="Example: 3"
+                [(ngModel)]="target"
+            >
+        </div>
+
+        <!-- Run Button -->
+        <button
+            class="btn btn-primary run-button"
+            (click)="runBinarySearch(numbers, target)"
+        >
+            Run Algorithm
+        </button>
+
+        <!-- Result -->
+        <div
+            *ngIf="result"
+            class="result-container mt-4"
+        >
+
+            <h5>Result</h5>
+
+            <p class="mb-0">
+                {{ result }}
+            </p>
+
+        </div>
+
+    </div>
+
+</div>

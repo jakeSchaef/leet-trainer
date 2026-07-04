@@ -1,0 +1,18 @@
+# Node / Angular
+my-angular-app/node_modules/
+my-angular-app/dist/
+my-angular-app/.angular/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/

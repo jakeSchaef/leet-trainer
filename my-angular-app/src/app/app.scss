@@ -1,0 +1,115 @@
+.hero-header{
+    padding: 45px 20px;
+    text-align: center;
+
+    background: linear-gradient(
+        180deg, 
+        #181824,
+        #101018
+    );
+
+    border-bottom: 2px solid rgba(139,92,246,.25);
+    box-shadow: 0 0 25px rgba(0,0,0,.5);
+    
+}
+
+.terminal-frame{
+    max-width: 900px;
+    margin: auto;
+}
+
+.terminal-line{
+    height: 2px;
+    margin: 15px auto;
+    width: 100%;
+
+    background:
+        linear-gradient(
+            to right, 
+            transparent,
+            var(--purple-glow),
+            transparent
+        );
+}
+
+.hero-header h1{
+    color: var(--purple);
+    letter-spacing: 8px;
+    font-size: 3.3rem;
+    margin: 15px;
+    text-shadow: 
+        0 0 10px rgba(139,92,246, .7),
+        0 0 25px rgba(139,92,246, .35);
+}
+
+.hero-header p{
+    color: #bbbbbb;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.footer {
+    margin-top: 60px;
+    border-top: 1px solid rgba(139, 92, 246, 0.25);
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+
+.stat-card {
+    background: var(--panel);
+    border: 1px solid rgba(139,92,246,.25);
+    border-radius: 14px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,.4);
+    transition: .25s;
+
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px var(--purple-glow);
+    border-color: var(--purple);
+
+}
+
+.stat-title {
+    color: #bcbcbc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .85rem;
+    margin-bottom: 12px;
+
+}
+
+.stat-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--purple);
+    text-shadow: 0 0 10px var(--purple-glow);
+
+}
+
+.status-online {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.4rem;
+    color: #78ff9c;
+    font-weight: bold;
+
+}
+
+.status-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #78ff9c;
+    box-shadow: 0 0 12px #78ff9c;
+    
+}

@@ -1,0 +1,32 @@
+<div class="page-container">
+  <div class="algorithm-card">
+    <h1 class="page-title">Best Time To Buy & Sell Stocks</h1>
+
+    <p class="text-center text-secondary mb-4">
+      Find the maximum profit from buying and selling a stock.
+    </p>
+
+    <div class="mb-3 text-center">
+      <label class="form-label d-block">Stock Prices</label>
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Example: 7,1,5,3,6,4"
+        [(ngModel)]="prices"
+      >
+    </div>
+
+    <button
+      class="btn btn-primary run-button"
+      type="button"
+      (click)="runBuyStocks(prices)"
+    >
+      Run Algorithm
+    </button>
+
+    <div *ngIf="result" class="result-container mt-4">
+      <h5>Result</h5>
+      <p class="mb-0">{{ result }}</p>
+    </div>
+  </div>
+</div>
