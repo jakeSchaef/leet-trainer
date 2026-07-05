@@ -3,13 +3,15 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
-    providedIn: 'root'
+providedIn: 'root'
 })
-
 export class HistoryService {
-    constructor(private http: HttpClient) {}
 
-    getHistory(): Observable<any[]> {
-        return this.http.get<any[]>('https://leet-trainer.onrender.com/api/history');
-    }
+private apiUrl = 'https://leet-trainer.onrender.com';
+
+constructor(private http: HttpClient) {}
+
+getHistory(): Observable<any[]> {
+return this.http.get<any[]>(`${this.apiUrl}/api/history`);
+}
 }
