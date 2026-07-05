@@ -7,7 +7,7 @@ import { ValidParentheses } from './valid-parentheses/valid-parentheses';
 import { TopKFrequency } from './top-k-frequency/top-k-frequency';
 import { SlidingWindow } from './sliding-window/sliding-window';
 import { Analytics } from './analytics/analytics';
-import { History } from './history/history';
+import { HistoryComponent } from './history/history';
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -18,7 +18,7 @@ export const routes: Routes = [
   { path: 'top-k-frequency', component: TopKFrequency },
   { path: 'sliding-window', component: SlidingWindow },
   { path: 'analytics', component: Analytics },
-  { path: 'history', component: History }
+  { path: 'history', component: HistoryComponent }
 ];
 
 
