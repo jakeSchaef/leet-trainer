@@ -10,6 +10,6 @@ export class HistoryService {
     constructor(private http: HttpClient) {}
 
     getHistory(): Observable<any[]> {
-        return this.http.get<any[]>('http://localhost:5000/api/history');
+        return this.http.get<any[]>('https://leet-trainer.onrender.com/api/history');
     }
 }
