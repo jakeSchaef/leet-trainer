@@ -26,7 +26,7 @@ export class TwoSum {
     const parsedTarget = Number(targetInput);
 
     this.http.post<any>(
-      "http://127.0.0.1:5000/api/two-sum",
+      "https://leet-trainer.onrender.com/api/two-sum",
       {
         nums: parsedArray,
         target: parsedTarget

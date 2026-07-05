@@ -20,7 +20,7 @@ export class ValidParentheses {
 
   runValidParentheses(inputString: string) {
     this.http.post<any>(
-      "http://127.0.0.1:5000/api/valid-parentheses",
+      "https://leet-trainer.onrender.com/api/valid-parentheses",
       {
         string: inputString
       }

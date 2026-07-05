@@ -26,7 +26,7 @@ export class TopKFrequency {
     const parsedK = Number(kInput);
 
     this.http.post<any>(
-      "http://127.0.0.1:5000/api/top-k-frequency",
+      "https://leet-trainer.onrender.com/api/top-k-frequency",
       {
         numbers: parsedArray,
         k: parsedK

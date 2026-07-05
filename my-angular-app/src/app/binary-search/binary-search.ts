@@ -26,7 +26,7 @@ export class BinarySearch {
     const parsedTarget = Number(targetInput);
 
     this.http
-      .post<{ result: number }>('http://127.0.0.1:5000/api/binary-search', {
+      .post<{ result: number }>('https://leet-trainer.onrender.com/api/binary-search', {
         numbers: parsedArray,
         target: parsedTarget,
       })

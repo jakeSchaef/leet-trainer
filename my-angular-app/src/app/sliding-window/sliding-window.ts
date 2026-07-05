@@ -20,7 +20,7 @@ export class SlidingWindow {
 
   runSlidingWindow(inputString: string) {
     this.http.post<any>(
-      "http://127.0.0.1:5000/api/sliding-window",
+      "https://leet-trainer.onrender.com/api/sliding-window",
       {
         string: inputString
       }
